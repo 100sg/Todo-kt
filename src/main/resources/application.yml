@@ -1,0 +1,17 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/amway?serverTimezone=Asia/Seoul&useSSL=false&autoReconnect=true&verifyServerCertificate=false&allowPublicKeyRetrieval=true&characterEncoding=utf8
+    username: root
+    password: shawn1010
+  main:
+    allow-bean-definition-overriding: true
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
